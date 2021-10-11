@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.FormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="?actionBarSize"
+            >
+            <ImageView
+                android:id="@+id/go_back"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/dataEnter"
+                android:textColor="#2F6964"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                       android:gravity="end"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/firstName"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:id="@+id/firstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/btn_form_style"
+                            android:inputType="textPersonName"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/lastName"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:id="@+id/lastName"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@drawable/btn_form_style"
+                            android:inputType="textPersonName"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="20dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/btn_form_style"
+                            android:layout_height="50dp">
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/genderSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:dropDownWidth="100dp"
+                                android:spinnerMode="dropdown"
+                                />
+
+                        </LinearLayout>
+
+
+                        <!--                        <com.google.android.material.textfield.TextInputLayout-->
+                        <!--                            android:id="@+id/cityMenu"-->
+                        <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="8dp"-->
+                        <!--                              >-->
+
+                        <!--                            <AutoCompleteTextView-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:inputType="text"-->
+                        <!--                                android:padding="10dp"-->
+                        <!--                                android:background="@drawable/btn_form_style"-->
+                        <!--                                />-->
+
+                        <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="20dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/btn_form_style"
+                            android:layout_height="50dp">
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerNameTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:dropDownWidth="100dp"
+                                android:spinnerMode="dropdown"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/birthday"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="تاريخ ميلادك"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1.5"
+                        android:padding="25dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/cityName"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/btn_form_style"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="50dp">
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:dropDownWidth="200dp"
+                                android:spinnerMode="dropdown"
+                                />
+
+                        </LinearLayout>
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:id="@+id/cityMenu"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                              >-->
+
+<!--                            <AutoCompleteTextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"-->
+<!--                                android:padding="10dp"-->
+<!--                                android:background="@drawable/btn_form_style"-->
+<!--                                />-->
+
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="25dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/quarterName"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/btn_form_style"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="50dp">
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerQuarters"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:dropDownWidth="200dp"
+                                android:spinnerMode="dropdown"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="25dp"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp" />
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/btn_form_style"
+                    android:inputType="textPersonName"
+                    />
+
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="@string/mobile"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/btn_form_style"
+                    android:inputType="textPersonName"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="20dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/btn_form_style"
+                            android:layout_height="50dp">
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerLang"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:dropDownWidth="100dp"
+                                android:spinnerMode="dropdown"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1.5"
+                        android:padding="20dp"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="كلمة المرور"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@drawable/btn_form_style"
+                            android:inputType="textPersonName"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveData"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_style"
+                android:fontFamily="@font/cairo_bold"
+                android:text="حفظ البيانات"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="سياسات الخصوصية والتراخيص"
+                android:textColor="#D05E27"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:textSize="15dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="أنت توافق على"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#AFAFAF"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

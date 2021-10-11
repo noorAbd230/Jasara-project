@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_card_style"
+    android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="211dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="105dp"
+                android:src="@drawable/ic_baseline_check_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textColor="#5B8683"
+                android:fontFamily="@font/cairo_bold"
+                android:text="تم إضافة الطلب"
+                />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

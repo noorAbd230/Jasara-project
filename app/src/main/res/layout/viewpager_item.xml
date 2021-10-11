@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F3F2F2"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bklinear"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/path"
+        android:layout_height="300dp">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@drawable/man"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/linear_style"
+        android:layout_below="@id/bklinear"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/path2"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/path1"
+                android:layout_weight="2"
+                android:paddingStart="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="150dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cairo_bold"
+            android:text="لا داعي لتضييع وقتك بالمتاجر"
+            android:textColor="#fff"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="@string/sub_title"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

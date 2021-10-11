@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="120dp"
+         >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_cart"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            card_view:cardBackgroundColor="#Fff"
+            card_view:cardElevation="10dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardPreventCornerOverlap="false">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/cart_style"
+                    android:gravity="center">
+
+
+
+                    <ImageView
+                        android:id="@+id/order_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/peache" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/order_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مشمش"
+                            android:textDirection="locale"
+                            android:layout_weight="1"
+                            android:textColor="#212121"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/cairo_bold"
+                            />
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/rBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:stepSize="0.5"
+                            android:layout_marginEnd="30dp"
+                            app:mrb_progressTint="@color/purple_500"
+                            android:layout_gravity="center"
+                            android:theme="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:numStars="5"
+                            android:rating="4"
+                            android:layout_marginRight="30dp" />
+
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="18dp"
+                            android:layout_weight="1.5"
+                            android:layout_gravity="center"
+                            android:src="@drawable/deletefilled"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/order_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="قيد الانتظار"
+                                    android:textDirection="locale"
+                                    android:layout_weight="12"
+                                    android:layout_marginTop="-5dp"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="9dp"
+                                    android:fontFamily="@font/cairo_bold"
+                                    />
+
+                                <LinearLayout
+                                    android:id="@+id/repeatOrders"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="تكرار الطلبية"
+                                        android:textSize="11dp"
+                                        android:fontFamily="@font/cairo_bold"
+                                        android:textColor="@color/purple_500"
+                                         />
+
+                                    <View
+                                        android:layout_width="62dp"
+                                        android:layout_height="1dp"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@color/purple_500" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="2.5"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="الكمية"
+                                        android:textDirection="locale"
+                                        android:textColor="#3E665A"
+                                        android:textSize="11dp"
+                                        android:fontFamily="@font/cairo"
+                                         />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:gravity="center|start"
+                                        android:layout_weight="0.4"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp">
+
+                                        <TextView
+                                            android:id="@+id/order_product_weight"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="3"
+                                            android:textColor="#212121"
+                                            android:textSize="11dp"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:text="Kg"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            />
+
+                                        <ImageView
+                                            android:id="@+id/dropdown_weight"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                                            />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                 <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center"
+                                     android:layout_weight="0.5"
+                                     android:paddingEnd="5dp"
+                                    android:layout_height="wrap_content"
+                                     android:paddingRight="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="السعر الإجمالي"
+                                        android:layout_marginEnd="2dp"
+                                        android:textColor="#3E665A"
+                                        android:textSize="12dp"
+                                        android:fontFamily="@font/cairo_bold"
+                                        android:layout_marginRight="2dp" />
+
+                                     <TextView
+                                         android:id="@+id/order_price"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:fontFamily="@font/cairo_bold"
+                                         android:text="$7"
+                                         android:textColor="#000"
+                                         android:textSize="15dp"
+                                         />
+                                 </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="end"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="0.6"
+                            android:layout_marginTop="-5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>

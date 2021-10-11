@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OrdersFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/categoryDetailsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo_bold"
+                        android:text="الطلبات"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:layout_marginRight="20dp" />
+
+                    <ImageView
+                        android:id="@+id/payment_method_back"
+                        android:layout_width="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_marginRight="20dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:visibility="gone"
+            android:layoutDirection="ltr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabIndicatorColor="#AFAFAF"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/teal_700"
+            app:tabTextColor="#AFAFAF"
+            tools:targetApi="jelly_bean_mr1" />
+
+    <include layout="@layout/tab_content"
+        />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="يونيو 2020 "
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/orders_view_pager"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                 />
+
+
+        </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

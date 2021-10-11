@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/new_shows"
+        android:checked="true"
+        android:title="عروض جديدة" />
+
+
+
+    <item
+        android:id="@+id/current_shows"
+        android:checked="true"
+        android:title="عروض سارية" />
+
+
+
+    <item
+        android:id="@+id/outdated_shows"
+        android:checked="true"
+        android:title="عروض على وشك الانتهاء"/>
+
+    <item
+        android:id="@+id/blank_shows"
+        android:checked="true"
+        android:title="" />
+
+</menu>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activites.TrackingOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:orientation="vertical">
+
+
+
+
+         <LinearLayout
+          android:layout_width="match_parent"
+         android:layout_height="?actionBarSize"
+             android:gravity="end"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/cairo_bold"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="تتبع الطلبية"
+                 android:textColor="@color/teal_700"
+                 android:textSize="22dp" />
+
+
+        <ImageView
+            android:id="@+id/previous_order_back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:layout_marginRight="20dp" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="تاريخ الطلبية"
+                android:textColor="@color/teal_700"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="28 July"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="رقم الطلبية"
+                android:textColor="@color/teal_700"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="#123454"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="المبلغ الاجمالي"
+                android:textColor="@color/teal_700"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="$75"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="#DF707070" />
+
+        <View
+            android:layout_width="201dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="-1.5dp"
+            android:layout_gravity="center"
+            android:background="@color/purple_500" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="ث"
+                    android:textColor="#616161"
+                    android:textSize="11dp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="19dp"
+                    android:background="@drawable/time_square_style"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="54"
+                        android:layout_gravity="center"
+                        android:textSize="7dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="د"
+                    android:textColor="#616161"
+                    android:textSize="11dp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="19dp"
+                    android:background="@drawable/time_square_style"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02"
+                        android:layout_gravity="center"
+                        android:textSize="7dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="س"
+                    android:textColor="#616161"
+                    android:textSize="11dp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="19dp"
+                    android:background="@drawable/time_square_style"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:layout_gravity="center"
+                        android:textSize="7dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_bold"
+                android:text="الوقت المقدر للاستلام"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/teal_700"
+                android:textSize="13dp"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_baseline_timer_24"
+                android:layout_marginRight="30dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#DF707070" />
+
+        <View
+            android:layout_width="298dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="-1.5dp"
+            android:layout_gravity="center"
+            android:background="@color/purple_500" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/purple_500"
+                        app:tint="@color/white"
+                        app:srcCompat="@drawable/ic_baseline_done_all_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_700" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textSize="17dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="تم الطلب"
+                    android:textColor="@color/teal_700"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/purple_500"
+                        app:tint="@color/white"
+                        app:srcCompat="@drawable/ic_baseline_done_all_24"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        android:background="#C8C8C8" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textSize="17dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:text="قيد التحضير"
+                    android:textColor="@color/teal_700"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#C8C8C8"
+                        app:tint="@color/white"
+                        app:srcCompat="@drawable/motorcycle"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        android:background="#C8C8C8" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textSize="17dp"
+                    android:text="تم الارسال"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:textColor="@color/teal_700"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#C8C8C8"
+                        app:tint="@color/white"
+                        app:srcCompat="@drawable/house"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="62dp"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:background="#C8C8C8" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_bold"
+                android:textSize="17dp"
+                android:text="تم التوصيل"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:textColor="@color/teal_700"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:background="@drawable/call_btn_style"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="تواصل مع المسؤول"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cairo"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_call_24"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

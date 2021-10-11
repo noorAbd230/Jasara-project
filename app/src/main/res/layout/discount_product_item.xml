@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/offer_card"
+            android:layout_width="190dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_style"
+            android:layout_height="255dp"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/card_linear"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border_pink_card_style"
+                    android:layout_height="130dp">
+
+
+                    <ImageView
+                        android:id="@+id/discount_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nuts"
+                        android:scaleType="fitCenter"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/discount_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="لوز محمص جديد"
+                    android:textSize="12dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/btn_style"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/ic_baseline_star_24"
+                                />
+
+                            <TextView
+                                android:id="@+id/rateNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textStyle="bold"
+                                android:layout_marginStart="2dp"
+                                android:textSize="9dp"
+                                android:gravity="end"
+                                android:textColor="#fff"
+                                android:layout_marginLeft="2dp" />
+
+                        </LinearLayout>
+
+
+
+                      </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/discount_subtitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:textDirection="locale"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="وصف وصف صفو وصف وصف و صفو
+وصف وصف و صف                             "
+                android:textColor="#8E8A82"
+                android:textSize="8dp"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/discount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="$34.00"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp" />
+
+                <ImageView
+                    android:id="@+id/add_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    android:layout_marginLeft="70dp" />
+
+                <ImageView
+                    android:id="@+id/plus_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="40dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:layout_marginLeft="40dp" />
+                <TextView
+                    android:id="@+id/quantity_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/minus_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_baseline_minimize_24"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

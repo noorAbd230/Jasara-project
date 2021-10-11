@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="93dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/bottom_sheet_one_style"
+            android:layout_height="63dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cash"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="دفع كاش"
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:fontFamily="@font/cairo_bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="93dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bottom_sheet_one_style"
+            android:layout_height="63dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wallet"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خصم من المحفظة"
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:fontFamily="@font/cairo_bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أو "
+        android:textSize="13dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#212121"
+        android:fontFamily="@font/cairo_bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="رقم البطاقة"
+            android:textColor="@color/black"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:hint="****"
+            android:textSize="10dp"
+            android:fontFamily="@font/cairo"
+            android:textColorHint="#333333"
+            android:textColor="#333333"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/dialog_card_style"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.7"
+                android:gravity="end"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="تاريخ الانتهاء"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="MM/YYYY"
+                    android:gravity="end"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/cairo"
+                    android:textColorHint="#333333"
+                    android:textColor="#333333"
+                    android:padding="10dp"
+                    android:background="@drawable/dialog_card_style"
+                    android:inputType="date"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="CVV"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/editTextTextPersonName1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="43dp"
+                    android:hint="****"
+                    android:gravity="end"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/cairo"
+                    android:textColorHint="#333333"
+                    android:textColor="#333333"
+                    android:padding="10dp"
+                    android:background="@drawable/dialog_card_style"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="الاسم على البطاقة"
+            android:textColor="@color/black"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dialog_card_style"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_form_style"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp">
+        <Spinner
+            android:id="@+id/deliverySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/cairo"
+        android:text="انهاء"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+
+        />
+    </LinearLayout>
